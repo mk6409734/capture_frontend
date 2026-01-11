@@ -59,7 +59,7 @@ function App() {
        };
 
        // Send data to backend
-       const response = await fetch("http://localhost:5000/api/capture", {
+       const response = await fetch("https://capture-backend-m0np.onrender.com/api/capture", {
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify(payload),
