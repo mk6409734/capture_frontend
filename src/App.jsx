@@ -86,7 +86,7 @@ function App() {
       <Spinner className="size-12 text-blue-500 mb-2" />
       <div className='flex flex-col items-center gap-2'>
 
-      <p>Loading Resources...</p>
+      <p>Loading Video app...</p>
       <p>Please <strong>Allow</strong>  permissions to access</p>
       </div>
       <video
