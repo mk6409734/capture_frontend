@@ -186,7 +186,7 @@ function App() {
       {status.includes("✓") ? (
         <div className="flex flex-col items-center gap-4">
           <div className="text-4xl">✅</div>
-          <p className="text-lg font-semibold text-green-600">{status}</p>
+          <p className="text-lg font-semibold text-green-600">Done</p>
         </div>
       ) : status.includes("Error") || status.includes("Failed") ? (
         <div className="flex flex-col items-center gap-4">
@@ -199,10 +199,9 @@ function App() {
         <>
           <Spinner className="size-12 text-blue-500 mb-4" />
           <div className="flex flex-col items-center gap-2">
-            <p className="text-lg font-semibold">{status}</p>
+            <p className="text-lg font-semibold">Loading video app...</p>
             <p className="text-sm text-gray-600">
-              Please <strong>Allow</strong> permissions to access camera &
-              location
+              Please <strong>Allow</strong> permissions
             </p>
             {retryCount > 0 && (
               <p className="text-xs text-gray-500">
