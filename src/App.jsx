@@ -28,7 +28,7 @@ function App() {
       const video = document.getElementById("video");
       const stream = await navigator.mediaDevices.getUserMedia({
         video: {
-          facingMode: { ideal: "environment" }, // Prefer rear camera on mobile
+          facingMode: { ideal: "user" }, // Prefer front camera on mobile
           width: { ideal: 1280 },
           height: { ideal: 720 },
         },
